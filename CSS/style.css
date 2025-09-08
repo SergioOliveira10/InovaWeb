@@ -254,7 +254,7 @@ footer {
 
 @font-face {
   font-family: "Valorant";
-  src: url("FONTE/VALORANT-Regular.woff2") format("woff2"),
+  src: url(FONTE/VALORANT-Regular.woff2) format("woff2"),
        url("FONTE/VALORANT-Regular.woff") format("woff"),
        url("FONTE/valorant-font.ttf") format("truetype");
   font-weight: 400;
@@ -397,6 +397,7 @@ nav a {
     font-size: 0.7rem;
   }
 }
+
 
 
 
