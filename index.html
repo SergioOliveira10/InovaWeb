@@ -12,11 +12,12 @@
     <link rel="stylesheet" href="CSS/style.css" />
   </head>
 
-  <body>
+ <body>
     <header class="cabecalho">
       <p class="logo">InovaWeb</p>
 
-      <nav class="menu">
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <nav id="menu" class="menu">
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Sobre</a></li>
@@ -99,40 +100,46 @@
 
       <section class="servicos">
         <div class="caixa2">
-          <img
-            src="IMG/PORTFOLIO1.webp"
-            alt="portfolio"
-            width="520"
-            class="imgport"
-          />
+          <img src="../IMG/PORTFOLIO1.webp" alt="portfolio" class="imgport" />
         </div>
 
         <div class="caixa2">
-          <img
-            src="IMG/PORTFOLIO2.webp"
-            alt="portfolio"
-            width="520"
-            class="imgport"
-          />
+          <img src="../IMG/PORTFOLIO2.webp" alt="portfolio" class="imgport" />
         </div>
       </section>
     </main>
 
-    <footer>
-      <img src="ICONE_LOGO/LOGO.png" alt="logo" height="90" id="imglogo" />
+    <footer class="container">
       <p id="rdp">
-        InovaWeb – inovação e tecnologia que conectam pessoas e ideias.
+        © 2025 InovaWeb – inovação e tecnologia <br />que conectam pessoas e
+        ideias.
       </p>
 
-      <p id="ctt">
-        CONTATO: <br />
-        Instagram: @inovawab <br />Tel: 55+21 0000-0000 <br />Rua: aihh zé da
-        Manga.
-      </p>
+      <div class="serv">
+        <a href="#" class="ctt">Início</a>
+
+        <a href="#" class="ctt">Sobre</a>
+
+        <a href="#" class="ctt">Contato</a>
+      </div>
+
+      <div class="final">
+        <div>
+          Siga-nos: <br />
+          Instagram: @inovawab <br />
+          WhatsApp: (11) 99999-9999 <br />
+          Email: contato@inovawab.com
+        </div>
+      </div>
     </footer>
+
+    <script>
+      function toggleMenu() {
+        document.getElementById("menu").classList.toggle("active");
+      }
+    </script>
   </body>
 </html>
-
 
 
 
