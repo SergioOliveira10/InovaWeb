@@ -249,9 +249,12 @@ footer {
 
 @font-face {
   font-family: "Valorant";
-  src: url(FONTE/Valorant Font.ttf) format("truetype");
-  font-weight: normal;
+  src: url("FONTE/valorant-font.woff2") format("woff2"),
+       url("FONTE/valorant-font.woff") format("woff"),
+       url("FONTE/valorant-font.ttf") format("truetype");
+  font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 @media (min-width: 300px) {
@@ -389,6 +392,7 @@ nav a {
     font-size: 0.7rem;
   }
 }
+
 
 
 
